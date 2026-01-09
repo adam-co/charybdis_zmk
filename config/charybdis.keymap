@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -128,6 +129,36 @@
             bindings = <&kp ENTER>;
             key-positions = <35 47>;
         };
+
+        rh_rightclick2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <32 33>;
+        };
+
+        rh_middleclick2 {
+            bindings = <&mkp MCLK>;
+            key-positions = <31 32 33>;
+        };
+
+        rh_leftclick2 {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 32>;
+        };
+
+        POW {
+            bindings = <&ext_power EP_TOG>;
+            key-positions = <7 8 9>;
+        };
+
+        kitty_layer {
+            bindings = <&tog 2>;
+            key-positions = <0 11 47 36>;
+        };
+
+        soft_off {
+            bindings = <&soft_off>;
+            key-positions = <0 11 54 55>;
+        };
     };
 
     behaviors {
@@ -166,7 +197,7 @@
 &kp ESCAPE      &kp N1  &kp N2  &kp N3        &kp N4        &kp N5       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0     &kp BACKSPACE
 &kp TAB         &kp Q   &kp W   &kp E         &kp R         &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P      &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F         &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI   &kp RIGHT_SHIFT
-&kp LCTRL       &kp Z   &kp X   &kp C         &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH  &kp ENTER
+&kp LCTRL       &kp Z   &kp X   &kp C         &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH  &kp APOS
                                 &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE    &kp SPACE  &kp BACKSPACE
                                               &mo 1         &kp SPACE    &mo 1
             >;
@@ -178,11 +209,22 @@
             label = "FUNC";
             bindings = <
 &kp F1          &kp F2     &kp F3     &kp F4        &kp F5        &kp F6               &kp F7       &kp F8         &kp F9     &kp F10           &kp MINUS  &kp PLUS
-&kp TAB         &kp GRAVE  &kp GRAVE  &kp UP        &kp R         &kp PRINTSCREEN      &kp F11      &kp F12        &kp UP     &kp LEFT_BRACKET  &kp RBKT   &kp BACKSLASH
+&kp TAB         &kp GRAVE  &kp TILDE  &kp UP        &kp R         &kp PRINTSCREEN      &kp F11      &kp F12        &kp UP     &kp LEFT_BRACKET  &kp RBKT   &kp BACKSLASH
 &kp LEFT_SHIFT  &kp A      &kp LEFT   &kp DOWN      &kp RIGHT     &kp K_SCROLL_UP      &kp PAGE_UP  &kp LEFT       &kp DOWN   &kp RIGHT         &kp SEMI   &kp RIGHT_SHIFT
 &kp LCTRL       &kp Z      &kp X      &kp C         &kp V         &kp K_SCROLL_DOWN    &kp PG_DN    &kp SPACE      &kp COMMA  &kp DOT           &kp SLASH  &kp APOS
                                       &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE            &kp SPACE    &kp BACKSPACE
                                                     &none         &kp SPACE            &none
+            >;
+        };
+
+        kitty_layer {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none
+                            &none  &none    &none
             >;
         };
     };
