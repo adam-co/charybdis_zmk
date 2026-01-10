@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   QWERTY: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
-    LCTRL, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, LEFT WIN, LEFT ALT, FUNC, BACK SPACE, ENTER, LCTRL, SPACE, SPACE]
+    LCTRL, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, FUNC, LEFT ALT, LEFT WIN, BACK SPACE, ENTER, SPACE, LCTRL, SPACE]
   FUNC:
   - F1
   - F2
@@ -51,9 +51,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
