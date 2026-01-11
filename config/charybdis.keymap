@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &msc {
+    delay-ms = <0>;
     time-to-max-speed-ms = <0>;
 };
 
