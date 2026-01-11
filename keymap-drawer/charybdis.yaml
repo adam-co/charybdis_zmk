@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  QWERTY: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
-    LCTRL, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, LEFT ALT, LCTRL, '&msc SCRL_UP', BACK SPACE, ENTER, SPACE, '&msc SCRL_DOWN', SPACE]
+  QWERTY: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;,
+    '''', LCTRL, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, LEFT ALT, LCTRL, '&msc SCRL_UP', BACK SPACE, ENTER, SPACE, '&msc SCRL_DOWN', SPACE]
   FUNC:
   - F1
   - F2
@@ -101,9 +101,9 @@ combos:
 - p: [36, 37]
   k: LEFT WIN
 - p: [0, 1]
-  k: ESC
+  k: '`'
 - p: [0, 12]
-  k: ESC
+  k: '`'
 - p: [31, 43]
   k: L CLK
 - p: [33, 45]
