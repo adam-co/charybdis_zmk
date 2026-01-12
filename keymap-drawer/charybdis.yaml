@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   QWERTY: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;,
-    '''', LCTRL, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, LEFT ALT, LCTRL, '&msc SCRL_UP', BACK SPACE, ENTER, SPACE, '&msc SCRL_DOWN', SPACE]
+    RIGHT SHIFT, LCTRL, Z, X, C, V, B, N, M, ',', ., /, ENTER, SPACE, LEFT WIN, '&msc SCRL_UP', '&msc SCRL_UP', SPACE, LEFT ALT, '&msc SCRL_DOWN', '&msc SCRL_DOWN']
   FUNC:
   - F1
   - F2
@@ -77,20 +77,20 @@ combos:
 - p: [24, 25]
   k: CAPSLOCK
 - p: [34, 35]
-  k: ENTER
+  k: ''''
 - p: [35, 47]
   k: ENTER
 - p: [0, 11, 47, 36]
   k: {t: kitty, h: toggle}
 - p: [11, 23]
   k: DELETE
-- p: [20, 19]
+- p: [20, 21]
   k: '['
-- p: [21, 20]
+- p: [21, 22]
   k: ']'
-- p: [8, 7]
+- p: [8, 9]
   k: '-'
-- p: [9, 8]
+- p: [9, 10]
   k: '='
 - p: [11, 10]
   k: DELETE
