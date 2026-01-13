@@ -46,9 +46,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - L CLK
+  - M CLK
+  - R CLK
   - {t: ▽, type: trans}
   - PAGE DOWN
   - {t: ▽, type: trans}
@@ -76,7 +76,7 @@ combos:
   k: M CLK
 - p: [24, 25]
   k: CAPSLOCK
-- p: [34, 35]
+- p: [34, 33]
   k: ''''
 - p: [35, 47]
   k: ENTER
@@ -110,3 +110,7 @@ combos:
   k: R CLK
 - p: [32, 44]
   k: M CLK
+- p: [52, 55]
+  k: FWD
+- p: [52, 51]
+  k: BACK
