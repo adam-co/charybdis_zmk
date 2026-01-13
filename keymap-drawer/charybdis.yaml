@@ -41,9 +41,9 @@ layers:
   - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - R CLK
+  - M CLK
+  - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
