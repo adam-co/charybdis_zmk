@@ -137,7 +137,7 @@
 
         RBKTX {
             bindings = <&kp RBKT>;
-            key-positions = <32 23>;
+            key-positions = <31 23>;
         };
 
         MINUSX {
@@ -207,12 +207,12 @@
 
         SpaceR {
             bindings = <&kp SPACE>;
-            key-positions = <31 32 33>;
+            key-positions = <33 31 31 32 33>;
         };
 
         SpaceL {
             bindings = <&kp SPACE>;
-            key-positions = <26 27 28>;
+            key-positions = <26 28>;
         };
     };
 
