@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  QWERTY: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;,
-    ENTER, LCTRL, Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, SPACE, SPACE, '&msc SCRL_UP', SPACE, '&msc SCRL_UP', LEFT ALT, '&msc SCRL_DOWN', '&msc SCRL_DOWN']
+  QWERTY: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, CAPSLOCK, A, S, D, F, G, H, J, K, L, ;,
+    ENTER, LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, SPACE, SPACE, FUNC, SPACE, '&msc SCRL_UP', LEFT ALT, LEFT CONTROL, '&msc SCRL_DOWN']
   FUNC:
   - F1
   - F2
@@ -45,7 +45,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE DOWN
-  - {t: ▽, type: trans}
+  - PRINT SCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -57,7 +57,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kitty: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
@@ -74,8 +74,6 @@ combos:
   k: R CLK
 - p: [38, 39, 40]
   k: M CLK
-- p: [24, 36]
-  k: CAPSLOCK
 - p: [31, 35]
   k: ''''
 - p: [35, 47]
