@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  QWERTY: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LCTRL, A, S, D, F, G, H, J, K, L, ;, ENTER,
-    LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, SPACE, SPACE, '&msc SCRL_UP', SPACE, '&msc SCRL_UP', LEFT ALT, '&msc SCRL_DOWN', '&msc SCRL_DOWN']
+  QWERTY: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, NUBS, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;,
+    ENTER, LCTRL, Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, SPACE, SPACE, '&msc SCRL_UP', SPACE, '&msc SCRL_UP', LEFT ALT, '&msc SCRL_DOWN', '&msc SCRL_DOWN']
   FUNC:
   - F1
   - F2
@@ -14,43 +14,43 @@ layers:
   - F9
   - F10
   - F11
+  - BACK SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP
+  - {t: ▽, type: trans}
   - DEV TOOLS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PRINT SCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - {t: ▽, type: trans}
   - PAGE UP
   - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
   - {t: ▽, type: trans}
-  - R CLK
-  - M CLK
-  - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - L CLK
-  - M CLK
-  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -114,7 +114,7 @@ combos:
   k: FWD
 - p: [52, 51]
   k: BACK
-- p: [33, 31, 31, 32, 33]
+- p: [33, 31, 31, 33]
   k: SPACE
 - p: [26, 28]
   k: SPACE
